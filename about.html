@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | NGO</title>
+  <link rel="stylesheet" href="websitestyle.css">
+</head>
+
+<body class="about">
+
+
+<nav class="linksection">
+   <a href="home.html">Home</a>
+   <a href="about.html">About</a>
+</nav>
+
+
+<section class="about-hero">
+  <h2>About Us</h2>
+  <p>
+    We are a non-governmental organisation committed to creating positive and
+    lasting change in society. Our mission is to uplift communities by focusing
+    on sustainability, child welfare, and dignity for every individual.
+  </p>
+</section>
+
+<section class="impact-section">
+  <h2 class="section-title">Cause & Impact</h2>
+
+  <!-- 1 -->
+  <div class="impact-card">
+    <div class="img-container">
+      <img src="saplingcultivation.jpg" alt="Sapling Cultivation">
+    </div>
+    <div class="impact-content">
+      <h3>Mission 'Green'</h3>
+      <p>
+        We planted and nurtured 1000 saplings to promote a greener environment.
+        By involving local residents and volunteers, we create awareness about environmental responsibility              	and work towards a greener, healthier planet for future generations.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="impact-card">
+    <div class="img-container">
+      <img src="fooddonation.jpg" alt="Food for Children">
+    </div>
+    <div class="impact-content">
+      <h3>One Meal</h3>
+      <p>
+        We provided nutritious meals to 200+ underprivileged children to fight hunger
+        and malnutrition. Proper nutrition helps children grow healthy, stay in school,
+        and dream of a better tomorrow.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="impact-card">
+    <div class="img-container">
+      <img src="clothdonation.jpg" alt="Clothes for the Poor">
+    </div>
+    <div class="impact-content">
+      <h3>Sarvam Vastra</h3>
+      <p>
+        We distributed clean and wearable clothes to people in need, restoring dignity
+        and comfort. This initiative took aiming no one is left exposed to harsh
+        weather or social neglect.
+      </p>
+    </div>
+  </div>
+
+</section>
+<script>
+  const links = document.querySelectorAll("nav a");
+  const currentPage = location.pathname.split("/").pop() || "about.html";
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>
