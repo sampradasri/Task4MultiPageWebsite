@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate</title>
+  <link rel="stylesheet" href="websitestyle.css">
+</head>
+<body class="donate">
+
+<div class="form-container">
+  <form class="donation-form">
+
+    <h2>Make a Donation</h2>
+    <p>Your support helps us create a better future.</p>
+
+    <div class="form-group">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="number">Contact Number</label>
+      <input type="tel" id="number" name="number" placeholder="10-digit mobile number" maxlength="10" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input style="padding-bottom: 30px; type="text" id="address" name="address" placeholder="Enter your address">
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Donation Amount (₹)</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter amount" min="100"required>
+    </div>
+
+    <button type="submit" class="donate-btn">Donate</button>
+
+  </form>
+
+</div>
+
+<script>
+  const links = document.querySelectorAll("nav a");
+  const currentPage = location.pathname.split("/").pop() || "donate.html";
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

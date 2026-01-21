@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Non-Governmental Organisation</title>
+<link rel="stylesheet" href="websitestyle.css">
+</head>
+<body class="home">
+
+<div class="colorbox"></div>
+
+
+<nav class="linksection">
+   <a href="home.html">Home</a>
+   <a href="about.html">About</a>
+</nav>
+
+
+<div class="img-container">
+  <img src="children.jpg" alt="children">
+    <div class="text-overlay">
+
+	<h1>Together, We Can Create a Better Tomorrow</h1>
+         <div class="btn-row">
+             <a href="donate.html">
+              <button class="btn">Donate</button>
+             </a>
+
+         </div>
+    </div>
+</div>
+<footer>© 2026 NGO CareIndia | All Rights ReservedAuthor: Non-Governmental Organisation | Email: carengo@gmail.com | Contact: +91 9987556672 | LinkedIn: carengo.linkedin</footer>
+
+<script>
+  const links = document.querySelectorAll("nav a");
+  const currentPage = location.pathname.split("/").pop() || "home.html";
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>
